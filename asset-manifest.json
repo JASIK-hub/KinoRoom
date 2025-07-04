@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kinoroom/static/css/main.c1c6ffb7.css",
-    "main.js": "/kinoroom/static/js/main.26c93bce.js",
+    "main.js": "/kinoroom/static/js/main.6080ea0d.js",
     "static/media/vecteezy_3d-vibrant-abstract-fluid-element-with-transparent-background_52782790.png": "/kinoroom/static/media/vecteezy_3d-vibrant-abstract-fluid-element-with-transparent-background_52782790.9198bb549ac8a2972501.png",
     "static/media/vecteezy_fly-out-love-shape-from-gift-box-3d-item_47311473.png": "/kinoroom/static/media/vecteezy_fly-out-love-shape-from-gift-box-3d-item_47311473.09b49b35cc0ed04b0afb.png",
     "static/media/boxicons.svg": "/kinoroom/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
@@ -14,10 +14,10 @@
     "static/media/boxicons.woff2": "/kinoroom/static/media/boxicons.df635aaf04cd75132f62.woff2",
     "index.html": "/kinoroom/index.html",
     "main.c1c6ffb7.css.map": "/kinoroom/static/css/main.c1c6ffb7.css.map",
-    "main.26c93bce.js.map": "/kinoroom/static/js/main.26c93bce.js.map"
+    "main.6080ea0d.js.map": "/kinoroom/static/js/main.6080ea0d.js.map"
   },
   "entrypoints": [
     "static/css/main.c1c6ffb7.css",
-    "static/js/main.26c93bce.js"
+    "static/js/main.6080ea0d.js"
   ]
 }
