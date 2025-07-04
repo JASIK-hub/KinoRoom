@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kinoroom/static/css/main.c1c6ffb7.css",
+    "main.js": "/kinoroom/static/js/main.26c93bce.js",
+    "static/media/vecteezy_3d-vibrant-abstract-fluid-element-with-transparent-background_52782790.png": "/kinoroom/static/media/vecteezy_3d-vibrant-abstract-fluid-element-with-transparent-background_52782790.9198bb549ac8a2972501.png",
+    "static/media/vecteezy_fly-out-love-shape-from-gift-box-3d-item_47311473.png": "/kinoroom/static/media/vecteezy_fly-out-love-shape-from-gift-box-3d-item_47311473.09b49b35cc0ed04b0afb.png",
+    "static/media/boxicons.svg": "/kinoroom/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/vecteezy_abstract-moving-line-wave-element_44761665.png": "/kinoroom/static/media/vecteezy_abstract-moving-line-wave-element_44761665.374d32c5ee3670c8de30.png",
+    "static/media/abstract-liquid-glass-transparent-ribbon.png": "/kinoroom/static/media/abstract-liquid-glass-transparent-ribbon.391a9d8eae7c31315a4d.png",
+    "static/media/christmas-string-lights-isolated-glowing-realistic-garlands-dark-background-holiday-shimmering.png": "/kinoroom/static/media/christmas-string-lights-isolated-glowing-realistic-garlands-dark-background-holiday-shimmering.e7a0264240835a5a635e.png",
+    "static/media/boxicons.eot": "/kinoroom/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "/kinoroom/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/kinoroom/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/boxicons.woff2": "/kinoroom/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "index.html": "/kinoroom/index.html",
+    "main.c1c6ffb7.css.map": "/kinoroom/static/css/main.c1c6ffb7.css.map",
+    "main.26c93bce.js.map": "/kinoroom/static/js/main.26c93bce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1c6ffb7.css",
+    "static/js/main.26c93bce.js"
+  ]
+}
