@@ -1,0 +1,118 @@
+@import '../../styles/App';
+
+header {
+  max-width: 1216px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+  .header_upper_line {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:1217px){
+      padding-inline: clamp(20px,6vw,60px);
+    }
+    .headerNavMenu,
+    .headerNav,
+    .headerSearch {
+      display: flex;
+      align-items: center;
+    }
+    .headerSearch,
+    .headerNavMenu{
+      @media screen and (max-width:900px){
+        display:none
+      }
+    }
+
+    .headerNavMenu {
+      gap: 20px;
+    }
+
+    .header_Nav_Menu_Li,
+    .headerFilterSection {
+      color: $gray;
+      list-style: none;
+      font-weight: bold;
+    }
+
+    .header_Nav_Menu_Li {
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 18px;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    .headerFilterSection {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      button {
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .headerSearch {
+      gap: 10px;
+      background-color: transparent;
+      color: $gray;
+      transition: 0.2s;
+
+      &:hover {
+        color: white;
+
+        .bx {
+          color: white;
+        }
+      }
+    }
+
+    .LoginBtn {
+      color: white;
+      background-color: $button;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.bx {
+  color: $gray;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.searching_header_toggled {
+  background-color: #0b0b0b;
+  width: 100%;
+  height: 80%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  margin: 0;
+}
+
+.header_upperLine_searching {
+  width: 1216px;
+  margin: 0 auto;
+}
+
+.blur_overlay {
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}

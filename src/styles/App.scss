@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$gray: rgb(158, 157, 157);
+$dark-bg: #121212;
+$light-purple-opacity: rgba(48, 29, 83, 0.816);
+$light-purple: rgb(19, 9, 40);
+$button: #1e1e1e;
+
+
+body {
+  background-color: $dark-bg;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}

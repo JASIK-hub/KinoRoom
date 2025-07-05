@@ -1,0 +1,68 @@
+.genreList_outer{
+    position: relative;
+    max-width: 1216px,;
+    margin-inline: auto;
+    margin-top: clamp(20px,3%,60px);
+        
+        @media screen and (max-width:1217px){
+            padding-inline: clamp(20px, 6vw, 60px);
+        }
+    .genreList_inner{
+        overflow: hidden;
+        .genreList{
+            @media screen and (max-width:900px){
+                overflow: scroll;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+            }
+            display: flex;
+            gap:20px;
+            transition:transform 0.5s ease;
+
+            .genreListBtn {
+                width: 117.5px;
+                background-color: #1e1e1e;
+                border-radius: 5px;
+                color: white;
+                border: none;
+                flex-shrink: 0;
+                padding: 10px 10px;
+                font-size:clamp(10px,85%,100%);
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    background: linear-gradient(30deg, #1e1e1e, #1e1e1e, rgb(48, 48, 48));
+                }
+                }
+        }
+    }
+
+    .genreSlideButtons{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top:50%;
+        right:0;
+        left:0;
+        z-index: 3;
+        transform: translateY(-50%);
+        @media screen and (max-width:1217px) {
+            padding:0 20px;
+            margin: 0 auto;
+        }
+        @media screen and (max-width:900px){
+            display: none;
+        }
+    }
+    &:after{
+        content: '';
+        width:13%;
+        height:100%;
+        background: linear-gradient(to right,transparent,#121212);
+        z-index: 2;
+        position: absolute;
+        top:0;
+        right:0
+    }
+}

@@ -1,0 +1,56 @@
+.search_global_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+
+  .search_global_header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .film_title_input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      width: 50%;
+      padding: 10px 0;
+      font-size: 15px;
+    }
+  }
+
+  .searchedFilms_container {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: 150px;
+    gap: 50px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .searched_film_container {
+      display: flex;
+      align-items: start;
+      gap: 8px;
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .searchedfilm_info {
+        p {
+          margin-top: 0;
+        }
+      }
+
+      .searched_film_title {
+        color: white;
+      }
+    }
+  }
+}

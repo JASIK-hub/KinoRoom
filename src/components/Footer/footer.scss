@@ -1,0 +1,63 @@
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-family: 'Space Grotesk';
+}
+.footer{
+  max-width:1216px;
+  margin:0 auto;
+  @media screen and (max-width:900px){
+    display: none;
+  }
+  &__outer{
+    p {
+      color: gray;
+      max-width: 600px;
+    }
+  }
+  &__inner{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info_global {
+  display: flex;
+  gap: 5rem;
+    a{
+      cursor: default;
+    }
+    
+  }
+  hr{
+    border:1px solid rgb(45, 45, 45);
+  }
+  &__icons {
+    display: flex;
+    gap: 10px;
+   
+    a{
+      cursor: default;
+      svg{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  h4 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+  }
+}
