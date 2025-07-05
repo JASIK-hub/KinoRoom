@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KinoRoom/static/css/main.6cf570ec.css",
-    "main.js": "/KinoRoom/static/js/main.718ca080.js",
+    "main.css": "/KinoRoom/static/css/main.2dc522a0.css",
+    "main.js": "/KinoRoom/static/js/main.746750e9.js",
     "static/media/vecteezy_3d-vibrant-abstract-fluid-element-with-transparent-background_52782790.png": "/KinoRoom/static/media/vecteezy_3d-vibrant-abstract-fluid-element-with-transparent-background_52782790.9198bb549ac8a2972501.png",
     "static/media/vecteezy_fly-out-love-shape-from-gift-box-3d-item_47311473.png": "/KinoRoom/static/media/vecteezy_fly-out-love-shape-from-gift-box-3d-item_47311473.09b49b35cc0ed04b0afb.png",
     "static/media/boxicons.svg": "/KinoRoom/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
@@ -13,11 +13,11 @@
     "static/media/boxicons.ttf": "/KinoRoom/static/media/boxicons.db9ddb1898dbd76badca.ttf",
     "static/media/boxicons.woff2": "/KinoRoom/static/media/boxicons.df635aaf04cd75132f62.woff2",
     "index.html": "/KinoRoom/index.html",
-    "main.6cf570ec.css.map": "/KinoRoom/static/css/main.6cf570ec.css.map",
-    "main.718ca080.js.map": "/KinoRoom/static/js/main.718ca080.js.map"
+    "main.2dc522a0.css.map": "/KinoRoom/static/css/main.2dc522a0.css.map",
+    "main.746750e9.js.map": "/KinoRoom/static/js/main.746750e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cf570ec.css",
-    "static/js/main.718ca080.js"
+    "static/css/main.2dc522a0.css",
+    "static/js/main.746750e9.js"
   ]
 }
