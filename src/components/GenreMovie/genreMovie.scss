@@ -102,7 +102,8 @@
       gap: 10px;
       
         &-primary{
-          display:inline;
+          display:flex;
+          align-items: center;
           cursor:pointer;
           i{
             display: inline;

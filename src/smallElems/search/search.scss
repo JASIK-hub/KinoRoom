@@ -1,0 +1,87 @@
+.searchBody {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+      display: none;
+    }
+
+  @media screen and (max-width: 1217px) {
+    padding-inline: clamp(20px, 6vw, 60px);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media screen and (max-width:900px){
+        display: block;
+      }
+    .logo-text{
+      @media screen and (max-width:900px){
+        display: none;
+      }
+    }
+  }
+
+  &__inputContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+
+  &__results {
+    overflow:hidden
+  }
+
+  &__resultsGrid {
+    display: grid;
+    grid-template-columns: repeat(5,250px);
+    gap: 50px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__resultCard {
+    display: flex;
+    gap: 9px;
+
+    img {
+      width:clamp(70px,10vw,120px);
+      flex-shrink: 0;
+      height:auto;
+      aspect-ratio: 2/4;
+      border-radius: 5px;
+    }
+  }
+
+  &__resultInfo {
+    p {
+      margin-top: 0;
+    }
+  }
+
+  &__resultTitle {
+    color: white;
+  }
+
+  &__resultYear {
+    color: white;
+  }
+}

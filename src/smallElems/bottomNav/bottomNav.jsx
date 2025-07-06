@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-
+import { useSearch } from '../../Context';
 import MovieIcon from '@mui/icons-material/Movie';
 import HomeFilledIcon from '@mui/icons-material/HomeFilled';
 import SearchIcon from '@mui/icons-material/Search';
 
 export default function BottomNav() {
   const [value, setValue] = useState(0);
-
+  const {setToggled}=useSearch()
   return (
     <BottomNavigation
       value={value}
@@ -28,7 +28,7 @@ export default function BottomNav() {
     >
       <BottomNavigationAction label="Home" icon={<HomeFilledIcon />} sx={{color:'gray'}} />
       <BottomNavigationAction label="Catalog" icon={<MovieIcon />} sx={{color:'gray'}} />
-      <BottomNavigationAction label="Search" icon={<SearchIcon />} sx={{color:'gray'}} />
+      <BottomNavigationAction label="Search" icon={<SearchIcon />} sx={{color:'gray'}} onClick={()=>setToggled(prev=>!prev)}></BottomNavigationAction>
     </BottomNavigation>
   );
 }

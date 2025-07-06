@@ -39,33 +39,34 @@ function SearchFilm({ change }) {
   
   return (
     <>
-      <div style={{ overflow: "hidden" }}>
-        {searchfilm.length > 0 && (
-          <div className="searchedFilms_container">
-            {filterFilms.map((film) => (
-                <div
-                  className="searched_film_container"
-                  key={film.id}
-                  onClick={() => navigate(`film/${film.id}`)}
-                >
-                   {film.poster_path && 
-                   <img
-                    src={`https://image.tmdb.org/t/p/original/${film.poster_path}`}
-                    style={{ width: "100px", height: "150px" }}
-                    alt=""
-                  />}
-                  
-                  <div className="searchedfilm_info">
-                    <p className="searched_film_title">{film.title}</p>
-                    <p style={{ color: "white" }}>
-                      {film.release_date.slice(0, 4)}
-                    </p>
-                  </div>
-                </div>
-              ))}
-          </div>
-        )}
-      </div>
+     <div className="searchBody__results">
+      {searchfilm.length > 0 && (
+        <div className="searchBody__resultsGrid">
+          {filterFilms.map((film) => (
+            <div
+              className="searchBody__resultCard"
+              key={film.id}
+              onClick={() => navigate(`film/${film.id}`)}
+            >
+              {film.poster_path && (
+                <img
+                  src={`https://image.tmdb.org/t/p/original/${film.poster_path}`}
+                  alt=""
+                  className="searchBody__resultImage"
+                />
+              )}
+
+              <div className="searchBody__resultInfo">
+                <p className="searchBody__resultTitle">{film.title}</p>
+                <p className="searchBody__resultYear">
+                  {film.release_date.slice(0, 4)}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
     </>
   );
 }
@@ -80,16 +81,14 @@ export default function RenderSearch() {
   }, [value]);
 
   return (
-    <div className="search">
-      <div className="search__header">
-        <Logo/>
-        <div
-          style={{ display: "flex", gap: "10px", alignItems: "center" }}
-        >
+    <div className="searchBody">
+      <div className="searchBody__header">
+        <Logo />
+        <div className="searchBody__inputContainer">
           <SearchIcon sx={{ color: "white" }} />
           <input
             type="text"
-            className="film_title_input"
+            className="searchBody__input"
             placeholder="Search Film,Tv-Series"
             onChange={(e) => setValue(e.target.value)}
           />

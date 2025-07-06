@@ -93,20 +93,27 @@ header {
   transition: 0.2s;
 }
 
-.searching_header_toggled {
+.search{
   background-color: #0b0b0b;
-  width: 100%;
+  max-width: 100%;
+  left:0;
+  right:0;
   height: 80%;
   z-index: 100;
   position: fixed;
   top: 0;
   margin: 0;
+
+  &__header{
+    max-width: 1216px;
+   
+    margin: 0 auto;
+    display: flex;
+
+  }
 }
 
-.header_upperLine_searching {
-  width: 1216px;
-  margin: 0 auto;
-}
+
 
 .blur_overlay {
   backdrop-filter: blur(10px);

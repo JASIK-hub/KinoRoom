@@ -1,14 +1,12 @@
 
 import Logo from '../../smallElems/logo'
-import { useState } from "react";
-import RenderSearch from "../../smallElems/search";
+import { useSearch } from '../../Context';
+import RenderSearch from "../../smallElems/search/search";
 import "./Header.scss";
 import "boxicons/css/boxicons.min.css";
 
-function Head({setSearch}){
-  function enableSearch() {
-    setSearch(true);
-  }
+function Head({setToggled}){
+  
   return(
     <>
       <div className="headerNav">
@@ -23,7 +21,7 @@ function Head({setSearch}){
         </div>
       </div>
       <div className="headerFilterSection">
-        <button className="headerSearch" onClick={enableSearch}>
+        <button className="headerSearch" onClick={()=>setToggled(prev=>!prev)}>
           <i className=" bx bx-search"></i>Search
         </button>
         <button className="LoginBtn">Log in</button>
@@ -33,25 +31,24 @@ function Head({setSearch}){
 }
 
 export default function Header() {
-  const [showSearch, setSearch] = useState(false);
+  const {toggle,setToggled}=useSearch()
   return (
     <div
-      className={showSearch ? "blur_overlay" : ""}
+      className={toggle ? "blur_overlay" : ""}
       onClick={(e) => {
         if (e.target.classList.contains("blur_overlay")) {
-          setSearch(false);
+          setToggled(false);
         }
       }}
     >
-      <header className={showSearch ? "searching_header_toggled" : "simple_header"}>
-        <span className="blur"></span>
+      <header className={toggle ? "search" : "simple_header"}>
         <div
           className={
-            showSearch ? "header_upperLine_searching" : "header_upper_line"
+            toggle ? "search__header" : "header_upper_line"
           }
         >
-          {!showSearch && <Head setSearch={setSearch}/>}
-          {showSearch && <RenderSearch />}
+          {!toggle && <Head setToggled={setToggled}/>}
+          {toggle && <RenderSearch />}
         </div>
       </header>
     </div>
