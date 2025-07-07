@@ -50,6 +50,7 @@
   &__resultsGrid {
     display: grid;
     grid-template-columns: repeat(5,250px);
+    grid-template-rows:repeat(2,minmax(auto,200px));
     gap: 50px;
     overflow: scroll;
 
@@ -63,7 +64,7 @@
     gap: 9px;
 
     img {
-      width:clamp(70px,10vw,120px);
+      width:clamp(100px,10vw,120px);
       flex-shrink: 0;
       height:auto;
       aspect-ratio: 2/4;
